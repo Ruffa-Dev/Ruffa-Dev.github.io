@@ -1,0 +1,159 @@
+/*******************************************/
+/*            Style To-di list             */
+/*******************************************/
+
+html,
+body {
+  width: 100%;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.img {
+  background-image: url("../img/TO-DO-LIST.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
+}
+#mainContainer {
+  background: transparent;
+  box-shadow: 2px 4px 10px black;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  width: 25%;
+  left: 710px;
+  top: 250px;
+}
+
+#mainContainer .main-title {
+  text-align: center;
+  font-weight: 500;
+}
+
+#mainContainer .list-container {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+#mainContainer .list-container .to-do-list-container {
+  flex-grow: 1;
+  background: rgb(43, 112, 168);
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+
+#mainContainer .list-container .to-do-list-container .list-title {
+  text-align: center;
+  padding: 20px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+#mainContainer .list-container .to-do-list-container .list {
+  padding: 0px;
+}
+
+#mainContainer .list-container .to-do-list-container .list li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+#mainContainer .list-container .to-do-list-container .list li i {
+  float: right;
+  font-size: 30px;
+  position: relative;
+  bottom: 4px;
+}
+
+#mainContainer .list-container .to-do-list-container .list li .remove {
+  font-size: 23px;
+  position: relative;
+  bottom: 0px;
+}
+
+#mainContainer .list-container .to-do-list-container .list li i:hover {
+  cursor: pointer;
+}
+
+#mainContainer .list-container .to-do-list-container .list .pro {
+  background-color: rgba(202, 157, 61, 0.7);
+}
+
+#mainContainer .list-container .to-do-list-container .list .perso {
+  background-color: rgba(47, 139, 55, 0.7);
+}
+
+#mainContainer .list-container .to-do-list-container .list .urgent {
+  background-color: rgba(175, 37, 37, 0.7);
+}
+
+#mainContainer .input-container {
+  margin: 40px 0px;
+  padding: 0px 20px;
+}
+
+#mainContainer .input-container .input-fields-container {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+#mainContainer .input-container .input-fields-container #taskInput {
+  flex-grow: 5;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+#mainContainer .input-container .input-fields-container #categoryInput {
+  flex-grow: 2;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+#mainContainer .input-container .input-fields-container #submitTask {
+  flex-grow: 1;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  border: 1px solid white;
+}
+
+#mainContainer .input-container .input-fields-container #submitTask:hover {
+  border-color: #0e4470;
+  background-color: #0e4470;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #mainContainer .list-container {
+    flex-direction: column;
+  }
+
+  #mainContainer
+    .list-container
+    .to-do-list-container
+    .list
+    li
+    .change-to-in-progress {
+    transform: rotate(90deg);
+  }
+}
+#submitTask {
+  background-color: #0e4470 !important;
+}

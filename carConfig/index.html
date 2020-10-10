@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toto mobile configurateur</title>
+
+    <link type="text/css" rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="baniere"></div>
+    </header>
+    <div class="design">
+      <h1>Configurateur de la Toto mobile</h1>
+
+      <!-- Price details -->
+      <section id="price-summary">
+        <div class="top">
+          <p>Prix du modèle: <span class="model-price"></span></p>
+        </div>
+        <div class="top">
+          <p>Prix de la couleur: <span class="color-price"></span></p>
+        </div>
+        <div class="top">
+          <p>Prix du moteur: <span class="motor-price"></span></p>
+        </div>
+        <div class="top">
+          <p>Prix de l'option: <span class="option-price"></span></p>
+        </div>
+      </section>
+
+      <!-- Model selection -->
+      <section class="test" id="model">
+        <div class="body">
+          <div class="align_bug">
+        <h2>Choisissez votre modèle:</h2><br />
+        <input
+          id="model-0"
+          type="radio"
+          name="model"
+          value="0"
+          disabled
+          checked
+        />
+        <label for="model-0">default</label><br />
+
+        <input
+          id="model-1"
+          class="model-radio"
+          type="radio"
+          name="model"
+          value="15000"
+        />
+        <label for="model-1">Toto citadine</label><br />
+
+        <input
+          id="model-2"
+          class="model-radio"
+          type="radio"
+          name="model"
+          value="20000"
+        />
+        <label for="model-2">Toto berline</label><br />
+
+        <input
+          id="model-3"
+          class="model-radio"
+          type="radio"
+          name="model"
+          value="25000"
+        />
+        <label for="model-3">Toto SUV</label><br />
+
+        <input
+          id="model-4"
+          class="model-radio"
+          type="radio"
+          name="model"
+          value="30000"
+        />
+        <label for="model-4">Toto sportster</label><br />
+          </div>
+        </div>
+      </section>
+      <!--choix couleur-->
+      <section class="test">
+        <div class="body">
+        <h2>Choisissez votre couleur:</h2><br />
+
+        <input
+          id="color-0"
+          type="radio"
+          name="color"
+          value="0"
+          disabled
+          checked
+        />
+        <label for="color-0">default</label><br />
+        <input
+          id="color-1"
+          class="model-color"
+          type="radio"
+          name="model-color"
+          value="500"
+        />
+        <label for="color-1">Rouge</label><br />
+
+        <input
+          id="color-2"
+          class="model-color"
+          type="radio"
+          name="model-color"
+          value="800"
+        />
+        <label for="color-2">Bleu</label><br />
+
+        <input
+          id="color-3"
+          class="model-color"
+          type="radio"
+          name="model-color"
+          value="1000"
+        />
+        <label for="color-3">Noir</label><br />
+      </div>
+      </section>
+      <!-- choix moteur-->
+      <section class="test">
+      <div class="body">
+        <h2>Choisissez votre moteur:</h2><br />
+
+        <input
+          id="motor-0"
+          type="radio"
+          name="motor"
+          value="0"
+          disabled
+          checked
+        />
+        <label for="motor-0">default</label><br />
+
+        <input
+          id="motor-1"
+          class="model-motor"
+          type="radio"
+          name="model-motor"
+          value="5000"
+        />
+        <label for="motor-1">120cv</label><br />
+
+        <input
+          id="motor-2"
+          class="model-motor"
+          type="radio"
+          name="model-motor"
+          value="6000"
+        />
+        <label for="motor-2">140cv</label><br />
+
+        <input
+          id="motor-3"
+          class="model-motor"
+          type="radio"
+          name="model-motor"
+          value="8000"
+        />
+        <label for="motor-3">200cv</label><br />
+      </div>
+      </section>
+      <!--choix option-->
+      <section class="test">
+        <div class="body">
+        <h2>Choisissez votre option:</h2><br />
+
+        <input
+          id="option-0"
+          type="radio"
+          name="option"
+          value="0"
+          disabled
+          checked
+        />
+        <label for="option-0">default</label><br />
+
+        <input
+          id="option-1"
+          class="model-option"
+          type="checkbox"
+          name="model-option"
+          value="1000"
+        />
+        <label for="option-1">sono</label><br />
+
+        <input
+          id="option-2"
+          class="model-option"
+          type="checkbox"
+          name="model-option"
+          value="2000"
+        />
+        <label for="motor-2">jantes</label><br />
+
+        <input
+          id="option-3"
+          class="model-option"
+          type="checkbox"
+          name="model-option"
+          value="800"
+        />
+        <label for="option-3">roue de secour</label><br />
+      </div>
+      </div>
+      </section>
+      <section class="prix">
+        <p>Prix de votre voiture: <span class="car-price"></span></p>
+      </section>
+      <br />
+      <br />
+      <br />
+    </div>
+    <footer class="foot">
+      <div>
+        <img src="assets/img/2.jpg">
+      </div>
+      </footer>
+    <script type="text/javascript" src="assets/scripts/script.js"></script>
+  </body>
+</html>

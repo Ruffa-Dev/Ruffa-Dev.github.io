@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>To-Do List</title>
+
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
+  </head>
+
+  <body>
+    <div class="img">
+      <!-- Conteneur principal-->
+      <div id="mainContainer">
+        <h2 class="main-title">To-do list</h2>
+
+        <div class="list-container">
+          <!-- Liste A faire-->
+          <div class="to-do-list-container">
+            <h3 class="list-title">A faire</h3>
+            <ul class="list to-do-list"></ul>
+          </div>
+
+          <!-- Liste En cours-->
+          <div class="to-do-list-container in-progress">
+            <h3 class="list-title">En cours</h3>
+            <ul class="list in-progress-list"></ul>
+          </div>
+        </div>
+
+        <!-- Conteneur des champs de saisie-->
+        <div class="input-container">
+          <p>Saisir une tâche:</p>
+          <div class="input-fields-container">
+            <!-- Champs de saisie de la tâche-->
+            <input type="text" id="taskInput" />
+
+            <select id="categoryInput">
+              <option value="perso">Personnel</option>
+              <option value="pro">Pro</option>
+              <option value="urgent">Urgent</option>
+            </select>
+
+            <!-- Bouton ajouter-->
+            <button id="submitTask">Ajouter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="assets/scripts/script.js"></script>
+</html>
