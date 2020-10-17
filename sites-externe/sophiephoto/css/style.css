@@ -139,17 +139,21 @@ body {
 }
 .formulaire-form {
   position: relative;
-  left: 40%;
+  text-align: center;
+}
+.formulaire-form {
+  position: relative;
+  text-align: center;
+}
+.formulaire-form label {
+  text-align: center;
 }
 .formulaire label {
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   display: block;
 }
-.formulaire .form {
-  text-align: left;
-  width: 100%;
-}
+
 .formulaire .form1 {
   border-radius: 5px;
   font-size: 20px;
@@ -160,9 +164,9 @@ body {
   font-size: 20px;
   width: 500px;
 }
-.test {
-  text-align: left;
+.consent {
   display: flex;
+  justify-content: center;
 }
 #consent {
   margin: 10px;
